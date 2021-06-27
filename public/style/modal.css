@@ -1,0 +1,70 @@
+.modal-wrapper.active{
+    visibility: visible;
+    opacity: 1;
+
+}
+
+.modal-wrapper{
+    background-color: rgba(0, 0, 0, 0.37);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* ambos fazen a nesnis ciusad */
+    visibility: hidden;
+    opacity: 0;
+    
+}
+
+
+.modal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:min(90%,59rem);
+    border: 1px solid black;
+    border-radius: 0.8rem;
+    font-family: "Poppins";
+
+    padding: 6.4rem;
+    justify-content: center;
+    background-color: var(--white   );
+}
+.modal form{
+    width: 28rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+  
+}
+.modal h2{
+    margin-bottom: 1rem;
+    color: var(--black);
+}
+
+.modal p{
+    margin-bottom: 1rem;
+    color: var(--grey-dark);
+    font-weight: 500;
+}
+
+.modal form input{
+    width: 100%;
+    border: 0.3rem solid var(--blue);
+    outline: none;
+
+}
+.modal form input::placeholder{
+    padding: 1rem;
+}
+.modal form .options{
+    display: flex;
+    width: 100%;
+    margin-top: 4rem;
+}
